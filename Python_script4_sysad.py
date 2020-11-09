@@ -5,7 +5,6 @@ import subprocess
 def kernel_func():
     username = "uname"
     username_arg = "-a"
-    print("\n")
     print("Generating info about kernel using %s\n" %(username))
     subprocess.call([username, username_arg])
 
@@ -23,8 +22,7 @@ def disk_func():
 def main_func():
     kernel_func()
     disk_func()
-    
-#main_func()
+
 
 if __name__ == "__main_func__":
     main_func()
